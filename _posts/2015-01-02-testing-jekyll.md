@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Testing Jekyll!"
-date: {}
+date: 2015-06-02 19:45:50
 categories: jekyll testing
 permalink: /testing
 published: true
