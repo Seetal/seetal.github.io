@@ -1,13 +1,21 @@
 ---
 layout: post
-title:  "Testing Jekyll!"
-date:   2015-01-02 19:45:50
+title: "Testing Jekyll!"
+date: {}
 categories: jekyll testing
 permalink: /testing
+published: true
 ---
+
 
 # This is a jekyll Test
 
 ## Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+**Bold Text**
+
+_Italic Text_
+
+## Another Heading
