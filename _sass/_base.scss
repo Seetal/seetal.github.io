@@ -45,15 +45,16 @@ table {
 /* FONTS */
 
 @font-face {
-    font-family: 'reklame';
-    src: url('../fonts/ReklameScript-Regular_DEMO-webfont.eot');
-    src: url('../fonts/ReklameScript-Regular_DEMO-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ReklameScript-Regular_DEMO-webfont.woff2') format('woff2'),
-         url('../fonts/ReklameScript-Regular_DEMO-webfont.woff') format('woff'),
-         url('../fonts/ReklameScript-Regular_DEMO-webfont.ttf') format('truetype'),
-         url('../fonts/ReklameScript-Regular_DEMO-webfont.svg#reklame_script_regular_demoRg') format('svg');
+    font-family: 'fresh_script';
+    src: url('../fonts/fresh_script-webfont.eot');
+    src: url('../fonts/fresh_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fresh_script-webfont.woff2') format('woff2'),
+         url('../fonts/fresh_script-webfont.woff') format('woff'),
+         url('../fonts/fresh_script-webfont.ttf') format('truetype'),
+         url('../fonts/fresh_script-webfont.svg#fresh_scriptregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 @font-face {
     font-family: 'kreonbold';
@@ -89,11 +90,31 @@ table {
     font-style: normal;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     font-family: 'kreonlight', arial, sans-serif;
     font-size: 100%;
+    color: $black;
 }
 h1 {
-    font-family: 'reklame', arial, sans-serif;
-    font-size: 6em;
+    font-family: 'kreonbold', arial, sans-serif;
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    font-family: 'kreonbold', arial, sans-serif;
+    font-size: 1.6em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.4em;
+    margin-bottom: 1em;
 }

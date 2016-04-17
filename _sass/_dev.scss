@@ -1,0 +1,10 @@
+$green: #A2C340;
+$black: #48484a;
+
+@mixin transition ($defaultTransition: background-color 0.2s ease-in) {
+	-webkit-transition: $defaultTransition;
+	-moz-transition: $defaultTransition;
+	-ms-transition: $defaultTransition;
+	-o-transition: $defaultTransition;
+	transition: $defaultTransition;
+}

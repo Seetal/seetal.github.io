@@ -1,0 +1,46 @@
+@import "dev";
+
+.logo {
+    width: 2em;
+    &:hover {
+        .logoBackPoly {
+            fill: $green - 20;
+        }
+    }
+}
+.logoBackPoly {
+    fill: $green;
+    @include transition(fill .3s ease);
+}
+
+
+.header {
+    width: 100%;
+    padding: 0 1em;
+    margin-bottom: 2em;
+}
+
+
+/* POST LIST */
+
+.homeArticle{
+    margin-bottom: 3em;
+    padding: 0 1em;
+}
+.postLink {
+    color: $black;
+}
+.listPostDate {
+    font-size: 0.85em;
+    color: $black + 30;
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+/* BUTTONS */
+
+.btnDefault {
+    color: #fff;
+    background-color: $green;
+    padding: 0.3em 0.5em;
+}
