@@ -8,3 +8,11 @@ $black: #48484a;
 	-o-transition: $defaultTransition;
 	transition: $defaultTransition;
 }
+
+@mixin transform ($defaultTransform: rotate(45deg)) {
+	-webkit-transform: $defaultTransform;
+	-moz-transform: $defaultTransform;
+	-ms-transform: $defaultTransform;
+	-o-transform: $defaultTransform;
+	transform: $defaultTransform;
+}
