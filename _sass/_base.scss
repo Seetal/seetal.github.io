@@ -113,6 +113,12 @@ h2 {
 }
 a {
     text-decoration: none;
+    color: $green;
+    @include transition(color .3s ease);
+    &:hover {
+        text-decoration: underline;
+        color: $green + 20;
+    }
 }
 p {
     line-height: 1.4em;
