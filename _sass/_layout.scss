@@ -58,7 +58,7 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding: 1em;
+    padding: 1.7em 1em 1em 1em;
     line-height: 1.4em;
     font-size: 1.4em;
     @include transition(top .4s ease);
@@ -74,6 +74,9 @@
     }
 }
 .closeFlyout {
+    position: fixed;
+    right: 1em;
+    top: 0;
     .menu3 {
         opacity: 0;
     }
@@ -88,9 +91,8 @@
 }
 /* POST LIST */
 
-.homeArticle{
+.homeArticle {
     margin-bottom: 3em;
-    padding: 0 1em;
 }
 .postLink {
     color: $black;
@@ -104,6 +106,16 @@
     color: $black + 30;
     margin-bottom: 0.5em;
     display: block;
+}
+.featureImage {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+.homePostHeader {
+    padding: 0 1em;
+}
+.homePostContent {
+    padding: 0 1em;
 }
 
 /* BUTTONS */

@@ -7,7 +7,9 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
-
+  {% if page.featureImage %}
+	<img src="/images/{{ page.featureImage }}" class="featureImage" />
+  {% endif %}
   <article class="post-content">
     {{ content }}
   </article>

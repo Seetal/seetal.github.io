@@ -7,26 +7,37 @@ title: "Jekyll Site"
   <div class="postList">
     {% for post in site.posts limit:1 %}
       <article class="homeArticle firstPost">
-        <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h1>
-          <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
-        <p class="exerpt">
+        <div class="homePostHeader">
+          <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h1>
+            <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h1>
+        </div>
+        {% if post.featureImage %}
+          <img src="/images/{{ post.featureImage }}" class="featureImage" />
+        {% endif %}
+        <div class="homePostContent">
+          <p class="exerpt">
           {{ post.content | strip_html | truncatewords: 50 }}
-        </p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="btnDefault">more...</a>    
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btnDefault">more...</a>  
+        </div>  
       </article>
     {% endfor %}
     {% for post in site.posts offset:1 %}
       <article class="homeArticle">
-        <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="exerpt">
-          {{ post.content | strip_html | truncatewords: 50 }}
-        </p>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="btnDefault">more...</a>    
+        <div class="homePostHeader">
+          <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2>
+            <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </div>
+        <div class="homePostContent">
+          <p class="exerpt">
+            {{ post.content | strip_html | truncatewords: 50 }}
+          </p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btnDefault">more...</a> 
+        </div>  
       </article>
     {% endfor %}
   </div>
