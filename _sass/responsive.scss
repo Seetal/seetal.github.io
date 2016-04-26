@@ -1,0 +1,20 @@
+@media screen and (min-width: 43.75em) /* 700px */ {
+	h1 {
+		font-size: 2.2em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	.header, .postHeader, .postContent {
+		padding: 0 1.5em;
+	}
+	.listPostDate {
+		font-size: 1em;
+	}
+	.homeArticle {
+		margin-bottom: 5em;
+	}
+	.btnDefault {
+		font-size: 1.1em;
+	}
+}

@@ -60,7 +60,7 @@
     color: #fff;
     padding: 1.7em 1em 1em 1em;
     line-height: 1.4em;
-    font-size: 1.4em;
+    font-size: 1.6em;
     @include transition(top .4s ease);
 }
 .flyoutInner {
@@ -111,10 +111,10 @@
     max-width: 100%;
     margin-bottom: 1em;
 }
-.homePostHeader {
+.postHeader {
     padding: 0 1em;
 }
-.homePostContent {
+.postContent {
     padding: 0 1em;
 }
 
