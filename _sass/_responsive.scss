@@ -1,0 +1,75 @@
+@media screen and (min-width: 43.75em) /* 700px */ {
+	h1 {
+		font-size: 2.2em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+	.header, .postHeader, .postContent {
+		padding: 0 1.5em;
+	}
+	.listPostDate {
+		font-size: 1em;
+	}
+	.homeArticle {
+		margin-bottom: 5em;
+	}
+	.btnDefault {
+		font-size: 1.1em;
+	}
+	.flyout {
+		font-size: 2.2em;
+	}
+	.closeFlyout {
+		right: 1.5em;
+	}
+}
+@media screen and (min-width: 56.25em) /* 900px */ {
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+	.header {
+		width: 37.5em;
+		float: right;
+	}
+	.postContent {
+		width: 37.5em;
+		float: right;
+	}
+	.postHeader {
+		width: 37.5em;
+		float: right;
+	}
+	.homeArticle {
+		overflow: hidden;
+	}
+	.postList {
+		clear: right;
+	}
+}
+@media screen and (min-width: 68.75em) /* 1100px */ {
+	p {
+		font-size: 1.4em;
+	}
+	.header {
+		width: 62.5em;
+		position: relative;
+		margin: 0 auto 3em auto;
+		float: none;
+	}
+	.postContent {
+		width: 62.5em;
+		position: relative;
+		margin: auto;
+		float: none;
+	}
+	.postHeader {
+		width: 62.5em;
+		position: relative;
+		margin: auto;
+		float: none;
+	}
+}
