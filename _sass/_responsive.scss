@@ -1,6 +1,6 @@
 @media screen and (min-width: 43.75em) /* 700px */ {
 	h1 {
-		font-size: 2.2em;
+		font-size: 2.8em;
 	}
 	p {
 		font-size: 1.2em;
@@ -31,17 +31,13 @@
 	h2 {
 		font-size: 1.8em;
 	}
+	.header, .postContent, .postHeader {
+		width: 37.5em;
+		position: relative;
+		margin: auto;
+	}
 	.header {
-		width: 37.5em;
-		float: right;
-	}
-	.postContent {
-		width: 37.5em;
-		float: right;
-	}
-	.postHeader {
-		width: 37.5em;
-		float: right;
+		margin-bottom: 2em;
 	}
 	.homeArticle {
 		overflow: hidden;
@@ -49,27 +45,48 @@
 	.postList {
 		clear: right;
 	}
+	.featureImageWrapper {
+		width: 100%;
+	}
+	.featureImage {
+		margin-bottom: 2em;
+	}
+	.flyout {
+		font-size: 3em;
+	}
 }
 @media screen and (min-width: 68.75em) /* 1100px */ {
+	h1 {
+		font-size: 5.5em;
+	}
 	p {
 		font-size: 1.4em;
 	}
+	.postContent, .postHeader {
+		width: 50em;
+		position: relative;
+		margin: auto;
+	}
 	.header {
-		width: 62.5em;
+		width: 65em;
 		position: relative;
 		margin: 0 auto 3em auto;
-		float: none;
+		padding: 0;
 	}
-	.postContent {
-		width: 62.5em;
+	.firstPost, .post {
+		.postHeader {
+			width: 65em;
+			position: relative;
+			margin: auto;
+			padding: 0;
+		}
+	}
+	.featureImageWrapper {
+		width: calc((100% - 65em) / 2 + 65em);
+	}
+	.flyoutInner {
 		position: relative;
 		margin: auto;
-		float: none;
-	}
-	.postHeader {
-		width: 62.5em;
-		position: relative;
-		margin: auto;
-		float: none;
+		width: 15em;
 	}
 }

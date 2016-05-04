@@ -14,7 +14,9 @@ title: "Jekyll Site"
           </h1>
         </div>
         {% if post.featureImage %}
+        <div class="featureImageWrapper">
           <img src="/images/{{ post.featureImage }}" class="featureImage" />
+        </div>
         {% endif %}
         <div class="postContent">
           <p class="exerpt">

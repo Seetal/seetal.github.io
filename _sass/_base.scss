@@ -45,17 +45,17 @@ table {
 /* FONTS */
 
 @font-face {
-    font-family: 'fresh_script';
-    src: url('../fonts/fresh_script-webfont.eot');
-    src: url('../fonts/fresh_script-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/fresh_script-webfont.woff2') format('woff2'),
-         url('../fonts/fresh_script-webfont.woff') format('woff'),
-         url('../fonts/fresh_script-webfont.ttf') format('truetype'),
-         url('../fonts/fresh_script-webfont.svg#fresh_scriptregular') format('svg');
+    font-family: 'shintia_scriptregular';
+    src: url('../fonts/shintia_script-webfont.eot');
+    src: url('../fonts/shintia_script-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/shintia_script-webfont.woff2') format('woff2'),
+         url('../fonts/shintia_script-webfont.woff') format('woff'),
+         url('../fonts/shintia_script-webfont.ttf') format('truetype'),
+         url('../fonts/shintia_script-webfont.svg#shintia_scriptregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
+
 @font-face {
     font-family: 'kreonbold';
     src: url('../fonts/kreon-bold-webfont.eot');
@@ -104,8 +104,8 @@ body {
     color: $black;
 }
 h1 {
-    font-family: 'kreonbold', arial, sans-serif;
-    font-size: 1.6em;
+    font-family: 'shintia_scriptregular', arial, sans-serif;
+    font-size: 2em;
     line-height: 1.3em;
     margin-bottom: 0.5em;
 }

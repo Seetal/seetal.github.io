@@ -26,7 +26,7 @@
     cursor: pointer;
     width: 1.8em;
     position: relative;
-    z-index: 100;
+    z-index: 110;
     span {
         display: block;
         background-color: $green;
@@ -37,7 +37,7 @@
             background-color .3s ease, 
             height .3s ease, 
             transform .5s ease, 
-            margin-top .5s ease, 
+            margin-top .5s ease,
             opacity .3s ease
             ));
         &:last-child {
@@ -62,6 +62,7 @@
     line-height: 1.4em;
     font-size: 1.6em;
     @include transition(top .4s ease);
+    z-index: 100;
 }
 .flyoutInner {
     opacity: 0;
@@ -113,6 +114,11 @@
 }
 .postHeader {
     padding: 0 1em;
+}
+.firstPost, .post {
+    .postHeader {
+        text-align: center;
+    }
 }
 .postContent {
     padding: 0 1em;
