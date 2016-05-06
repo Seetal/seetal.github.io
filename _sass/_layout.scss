@@ -58,15 +58,19 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
-    padding: 1.7em 1em 1em 1em;
+    padding: 2.5em 2em 2em 2em;
     line-height: 1.4em;
-    font-size: 1.6em;
     @include transition(top .4s ease);
     z-index: 100;
 }
 .flyoutInner {
     opacity: 0;
+    line-height: 1.4em;
     @include transition(opacity .3s ease .4s);
+    p {
+        font-size: 1.6em;
+        margin-bottom: 0;
+    }
 }
 .flyoutExpanded {
     top: 0;

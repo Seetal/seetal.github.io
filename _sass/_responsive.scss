@@ -17,8 +17,10 @@
 	.btnDefault {
 		font-size: 1.1em;
 	}
-	.flyout {
-		font-size: 2.2em;
+	.flyoutInner {
+		p {
+			font-size: 1.8em;
+		}
 	}
 	.closeFlyout {
 		right: 1.5em;
@@ -35,6 +37,7 @@
 		width: 37.5em;
 		position: relative;
 		margin: auto;
+		padding: 0;
 	}
 	.header {
 		margin-bottom: 2em;
@@ -51,8 +54,32 @@
 	.featureImage {
 		margin-bottom: 2em;
 	}
+	.flyoutInner {
+		width: 37.5em;
+		position: relative;
+		margin: auto;
+		p {
+			font-size: 1.4em;
+		}
+	}
 	.flyout {
-		font-size: 3em;
+		padding: 2em;
+	    height: 10em;
+	    position: relative;
+	    margin-top: -10em;
+	    @include transition(margin-top .4s ease);
+	    background-color: $green;	
+	    a {
+	    	color: #fff;
+	    	text-decoration: underline;
+	    }
+	}
+	.flyoutExpanded {
+	    margin-top: 0;
+	}
+	.closeFlyout {
+		position: relative;
+		right: auto;
 	}
 }
 @media screen and (min-width: 68.75em) /* 1100px */ {
@@ -63,30 +90,41 @@
 		font-size: 1.4em;
 	}
 	.postContent, .postHeader {
-		width: 50em;
+		width: 45em;
 		position: relative;
 		margin: auto;
 	}
 	.header {
-		width: 65em;
+		width: 60em;
 		position: relative;
 		margin: 0 auto 3em auto;
 		padding: 0;
 	}
 	.firstPost, .post {
 		.postHeader {
-			width: 65em;
+			width: 60em;
 			position: relative;
 			margin: auto;
 			padding: 0;
 		}
+		.listPostDate {
+			font-size: 1.2em;
+		}
 	}
 	.featureImageWrapper {
-		width: calc((100% - 65em) / 2 + 65em);
+		width: calc((100% - 60em) / 2 + 60em);
 	}
 	.flyoutInner {
-		position: relative;
-		margin: auto;
-		width: 15em;
+		width: 60em;
+		p {
+			font-size: 1.6em;
+		}
+	}
+	.flyout {
+	    height: 9em;
+	    margin-top: -9em;
+	}
+	.flyoutExpanded {
+	    margin-top: 0;
 	}
 }
