@@ -20,6 +20,16 @@
     margin-bottom: 2em;
     overflow: hidden;
 }
+.home, .post {
+    margin-bottom: 5em;
+}
+.siteFooter {
+    color: $black + 30;
+    padding: 0 1em;
+}
+.copyright {
+    font-size: 0.9em;
+}
 .aboutMeLink {
     float: right;
     margin-top: 1em;

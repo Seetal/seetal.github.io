@@ -25,6 +25,9 @@
 	.closeFlyout {
 		right: 1.5em;
 	}
+	.siteFooter {
+		padding: 0 1.5em;
+	}
 }
 @media screen and (min-width: 56.25em) /* 900px */ {
 	h1 {
@@ -33,13 +36,13 @@
 	h2 {
 		font-size: 1.8em;
 	}
-	.header, .postContent, .postHeader {
+	.header, .postContent, .postHeader, .siteFooter {
 		width: 37.5em;
 		position: relative;
 		margin: auto;
 		padding: 0;
 	}
-	.header {
+	.header, .siteFooter {
 		margin-bottom: 2em;
 	}
 	.homeArticle {
@@ -84,6 +87,9 @@
 		position: relative;
 		right: auto;
 	}
+	.home, .post {
+	    margin-bottom: 10em;
+	}
 }
 @media screen and (min-width: 68.75em) /* 1100px */ {
 	h1 {
@@ -92,7 +98,7 @@
 	p {
 		font-size: 1.4em;
 	}
-	.postContent, .postHeader {
+	.postContent, .postHeader, .siteFooter {
 		width: 45em;
 		position: relative;
 		margin: auto;
