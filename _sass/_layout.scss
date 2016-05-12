@@ -137,6 +137,19 @@
 .postContent {
     padding: 0 1em;
 }
+.contentFigure {
+    margin-bottom: 1em;
+    p {
+        margin-bottom: 0;
+    }
+    figcaption {
+        text-align: center;
+        color: $black + 50;
+    }
+}
+.contentImage {
+    max-width: 100%;
+}
 
 /* BUTTONS */
 
