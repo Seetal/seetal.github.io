@@ -35,3 +35,5 @@ The final css is:
 	width: calc((100% - 60em) / 2 + 60em);
 }
 {% endhighlight %}
+
+Calc is supported in all modern browsers including ie9 and above. For a more detailed breakdown head over to the [caniuse](http://caniuse.com/#feat=calc "CSS Calc support") page.
