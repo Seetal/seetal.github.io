@@ -1,6 +1,11 @@
 /**
  * Syntax highlighting styles
  */
+.inlineCode {
+    background: #f1f1f1;
+    color: #458;
+    font-family: 'kreonregular', arial, sans-serif;
+}
 .highlight {
     width: 100%;
     padding: 1em;
@@ -8,6 +13,7 @@
     margin-bottom: 1.5em;
     border-left: 3px solid $green;
     line-height: 1.3em;
+    overflow-x: scroll;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error

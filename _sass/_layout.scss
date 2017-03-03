@@ -162,5 +162,7 @@
     @include transition(background-color .3s ease);
     &:hover {
         background-color: $green - 20;
+        color: #fff;
+        text-decoration: none;
     }
 }
