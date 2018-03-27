@@ -1,3 +1,9 @@
 <footer class="siteFooter">
 	<p class="copyright">Copyright &copy; Seetal Jhamut {{ site.time | date: '%Y' }}</p>
 </footer>
+<script type="text/javascript">
+	document.getElementById('aboutMeLink').onclick = function() {
+	  this.classList.toggle('closeFlyout');
+	  document.getElementById('flyout').classList.toggle('flyoutExpanded');
+	};
+</script>
