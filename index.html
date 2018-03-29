@@ -8,7 +8,12 @@ title: "Jhamut.com"
     {% for post in site.posts limit:1 %}
       <article class="homeArticle firstPost">
         <div class="postHeader">
-          <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="listPostDate">
+            {% assign d = post.date | date: "%-d" %}
+            {{ post.date | date: "%B" }} 
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+            {{ post.date | date: "%Y" }}
+          </span>
           <h1>
             <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h1>
@@ -29,7 +34,12 @@ title: "Jhamut.com"
     {% for post in site.posts offset:1 %}
       <article class="homeArticle">
         <div class="postHeader">
-          <span class="listPostDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="listPostDate">
+            {% assign d = post.date | date: "%-d" %}
+            {{ post.date | date: "%B" }} 
+            {% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+            {{ post.date | date: "%Y" }}
+          </span>
           <h2>
             <a class="postLink" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
