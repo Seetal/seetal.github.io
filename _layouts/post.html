@@ -13,7 +13,7 @@ layout: default
     <img src="/images/{{ page.featureImage }}" class="featureImage" />
   </div>
   {% endif %}
-  <div class="postContent">
+  <div class="postContent {% if page.featureImage %}featureImageContent{% endif %}">
     {{ content }}
   </div>
 </article>

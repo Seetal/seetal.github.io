@@ -47,12 +47,44 @@
 	}
 	.homeArticle {
 		overflow: hidden;
+		@supports (display: grid) {
+	        display: grid;
+	        grid-template-columns: 1fr 37.5em 1fr;
+	    }
+	}
+	.postHeader {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        width: 100%;
+	    }
+	}
+	.postContent {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        grid-row: 2;
+	        width: 100%;
+	    }
+	}
+	.featureImageContent {
+		@supports (display: grid) {
+	        grid-column: 2 / 3;
+	        grid-row: 3;
+	    }
 	}
 	.postList {
 		clear: right;
 	}
+	.post {
+		@supports (display: grid) {
+	        display: grid;
+	        grid-template-columns: 1fr 37.5em 1fr;
+	    }
+	}
 	.featureImageWrapper {
-		width: 100%;
+		@supports (display: grid) {
+	        grid-column: 1 / 4;
+	        grid-row: 2;
+	    }
 	}
 	.featureImage {
 		margin-bottom: 2em;
@@ -98,10 +130,21 @@
 	p, .highlight, ul, ol {
 		font-size: 1.4em;
 	}
+	.homeArticle, .post {
+		@supports (display: grid) {
+	        grid-template-columns: 1fr 7.5em 45em 7.5em 1fr;
+	    }
+	}
 	.postContent, .postHeader, .siteFooter {
 		width: 45em;
 		position: relative;
 		margin: auto;
+	}
+	.postContent {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        grid-row: 2;
+	    }
 	}
 	.header {
 		width: 60em;
@@ -109,12 +152,22 @@
 		margin: 0 auto 3em auto;
 		padding: 0;
 	}
+	.postHeader {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        width: 100%;
+	    }
+	}
 	.firstPost, .post {
 		.postHeader {
 			width: 60em;
 			position: relative;
 			margin: auto;
 			padding: 0;
+			@supports (display: grid) {
+		        grid-column: 2 / 5;
+		        width: 100%;
+		    }
 		}
 		.listPostDate {
 			font-size: 1.2em;
@@ -122,6 +175,17 @@
 	}
 	.featureImageWrapper {
 		width: calc((100% - 60em) / 2 + 60em);
+		@supports (display: grid) {
+	        grid-column: 1 / 5;
+	        grid-row: 2;
+	        width: 100%;
+	    }
+	}
+	.featureImageContent {
+		@supports (display: grid) {
+	        grid-column: 3 / 4;
+	        grid-row: 3;
+	    }
 	}
 	.flyoutInner {
 		width: 60em;
