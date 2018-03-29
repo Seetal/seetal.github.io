@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CSS Rotating Hero Banner"
-date: 2017-03-27T08:30:00.000Z
+date: 2018-03-27T08:30:00.000Z
 published: true
 ---
 
