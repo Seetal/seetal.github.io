@@ -23,7 +23,7 @@ title: "Jhamut.com"
           <img src="/images/{{ post.featureImage }}" class="featureImage" />
         </div>
         {% endif %}
-        <div class="postContent">
+        <div class="postContent {% if post.featureImage %}featureImageContent{% endif %}">
           <p class="exerpt">
           {{ post.content | strip_html | truncatewords: 50 }}
           </p>
