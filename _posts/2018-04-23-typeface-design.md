@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Typeface Design"
-date: 2018-04-16T08:30:00.000Z
+date: 2018-04-23T08:30:00.000Z
 published: true
 featureImage: scifi-knights.png
 ---
